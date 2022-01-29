@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Learn numbers in Ukrainian</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+<div>
+	<p th:utext="${number.ukrainian}">...</p>
+</div>
+<form action="#" th:action="@{/read}" method="post" th:object="${answer}">
+	<label for="answer">Your answer:</label><input id="answer" type="number" th:name="answer"/>
+	<input id="number" type="hidden" th:name="number" th:value="${number.number}"/>
+	<input type="submit" value="Ok"/>
+</form>
+</body>
+</html>
