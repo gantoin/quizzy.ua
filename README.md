@@ -1,5 +1,5 @@
 # quizz-ukrainian-number
-A simple game to study number in Ukrainian
+A simple game to study numbers in Ukrainian 
 
 Deployed on heroku: https://quizz-ukrainian-number.herokuapp.com/
 
