@@ -9,14 +9,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
+<p id="title">Quizz Ukrainian number</p>
 <div>
 	<p th:utext="${result}">...</p>
 </div>
-<form action="#" th:action="@{/read}" method="get">
-	<input type="submit" value="Play Again"/>
-</form>
-<form action="#" th:action="@{/}" method="get">
-	<input type="submit" value="Home"/>
-</form>
+<div id="menu">
+	<form class="menu-form" action="#" th:action="@{/read}" method="get">
+		<input type="submit" value="Play Again"/>
+	</form>
+	<form class="menu-form" action="#" th:action="@{/}" method="get">
+		<input type="submit" value="Home"/>
+	</form>
+</div>
 </body>
 </html>

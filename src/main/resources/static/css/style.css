@@ -1,0 +1,26 @@
+#title {
+    text-align: center;
+    font-size: 35px;
+}
+
+html {
+    text-align: center;
+}
+
+body {
+    margin: auto;
+    width: 80%;
+}
+
+#menu {
+    margin: auto;
+}
+
+.menu-form {
+    width: 50%;
+    float: left;
+}
+
+#guess {
+    font-size: 20px;
+}
