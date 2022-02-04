@@ -34,7 +34,24 @@ public class ApplicationApi {
 
     @PostMapping("/read")
     public String postAnswer(Model model, @RequestParam("answer") int answer, @RequestParam("number") int number) {
-        if(answer == number) {
+        if (answer == number) {
+            model.addAttribute("result", "Correct!");
+        } else {
+            model.addAttribute("result", "Wrong!");
+        }
+        return "result";
+    }
+
+    @GetMapping("/days")
+    public String daysForm(Model model) {
+        model.addAttribute("guess", csvReader.getRandomDay());
+        model.addAttribute("days", csvReader.getDays());
+        return "days";
+    }
+
+    @PostMapping("/days")
+    public String postDaysAnswer(Model model, @RequestParam("answer") String answer, @RequestParam("solution") String solution) {
+        if (answer.equals(solution)) {
             model.addAttribute("result", "Correct!");
         } else {
             model.addAttribute("result", "Wrong!");
