@@ -58,4 +58,21 @@ public class ApplicationApi {
         }
         return "result";
     }
+
+    @GetMapping("/months")
+    public String monthsForm(Model model) {
+        model.addAttribute("guess", csvReader.getRandomMonth());
+        model.addAttribute("months", csvReader.getMonths());
+        return "months";
+    }
+
+    @PostMapping("/months")
+    public String postMonthsAnswer(Model model, @RequestParam("answer") String answer, @RequestParam("solution") String solution) {
+        if (answer.equals(solution)) {
+            model.addAttribute("result", "Correct!");
+        } else {
+            model.addAttribute("result", "Wrong!");
+        }
+        return "result";
+    }
 }
