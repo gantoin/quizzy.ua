@@ -12,7 +12,13 @@
 <p id="title">Quizz Ukrainian number</p>
 <div id="menu">
 	<form class="menu-form" action="#" th:action="@{/read}" method="get">
-		<input type="submit" value="Read"/>
+		<input type="submit" value="Read:Numbers"/>
+	</form>
+	<form class="menu-form" action="#" th:action="@{/days}" method="get">
+		<input type="submit" value="Read:Days"/>
+	</form>
+	<form class="menu-form" action="#" th:action="@{/months}" method="get">
+		<input type="submit" value="Read:Months"/>
 	</form>
 	<form class="menu-form" action="#" th:action="@{/listen}" method="get">
 		<input type="submit" value="Listen"/>

@@ -33,11 +33,15 @@ public class ApplicationApi {
     }
 
     @PostMapping("/read")
-    public String postAnswer(Model model, @RequestParam("answer") int answer, @RequestParam("number") int number) {
-        if (answer == number) {
-            model.addAttribute("result", "Correct!");
-        } else {
+    public String postAnswer(Model model, @RequestParam("answer") String answer, @RequestParam("number") int number) {
+        if (answer == null || answer.isEmpty()) {
             model.addAttribute("result", "Wrong!");
+        } else {
+            if (Integer.parseInt(answer) == number) {
+                model.addAttribute("result", "Correct!");
+            } else {
+                model.addAttribute("result", "Wrong!");
+            }
         }
         return "result";
     }
