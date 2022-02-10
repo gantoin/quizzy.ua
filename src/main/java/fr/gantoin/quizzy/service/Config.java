@@ -1,4 +1,4 @@
-package fr.gantoin.quizzukrainiannumber.service;
+package fr.gantoin.quizzy.service;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

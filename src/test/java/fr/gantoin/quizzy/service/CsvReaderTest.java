@@ -1,4 +1,4 @@
-package fr.gantoin.quizzukrainiannumber.service;
+package fr.gantoin.quizzy.service;
 
 
 import static org.assertj.core.api.Assertions.assertThat;

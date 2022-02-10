@@ -8,9 +8,9 @@
     <relativePath /> <!-- lookup parent from repository -->
   </parent>
   <groupId>fr.gantoin</groupId>
-  <artifactId>quizz-ukrainian-number</artifactId>
+  <artifactId>quizzy</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>quizz-ukrainian-number</name>
+  <name>quizzy</name>
   <description>An app for learning numbers in Ukrainian</description>
   <properties>
     <java.version>11</java.version>

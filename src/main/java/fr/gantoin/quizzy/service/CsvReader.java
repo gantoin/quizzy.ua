@@ -1,4 +1,4 @@
-package fr.gantoin.quizzukrainiannumber.service;
+package fr.gantoin.quizzy.service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,9 +14,9 @@ import org.springframework.stereotype.Service;
 
 import lombok.Getter;
 
-import fr.gantoin.quizzukrainiannumber.domain.Day;
-import fr.gantoin.quizzukrainiannumber.domain.Month;
-import fr.gantoin.quizzukrainiannumber.domain.Number;
+import fr.gantoin.quizzy.domain.Day;
+import fr.gantoin.quizzy.domain.Month;
+import fr.gantoin.quizzy.domain.Number;
 
 @Service
 public class CsvReader {

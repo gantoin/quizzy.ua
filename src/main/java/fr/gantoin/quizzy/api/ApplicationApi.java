@@ -1,4 +1,4 @@
-package fr.gantoin.quizzukrainiannumber.api;
+package fr.gantoin.quizzy.api;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import lombok.RequiredArgsConstructor;
 
-import fr.gantoin.quizzukrainiannumber.service.CsvReader;
+import fr.gantoin.quizzy.service.CsvReader;
 
 @RequiredArgsConstructor
 @Controller

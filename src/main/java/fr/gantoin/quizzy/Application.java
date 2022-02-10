@@ -1,4 +1,4 @@
-package fr.gantoin.quizzukrainiannumber;
+package fr.gantoin.quizzy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
