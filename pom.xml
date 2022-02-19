@@ -11,7 +11,7 @@
   <artifactId>quizzy</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>quizzy</name>
-  <description>An app for learning numbers in Ukrainian</description>
+  <description>An app for learning vocabulary in Ukrainian</description>
   <properties>
     <java.version>11</java.version>
   </properties>

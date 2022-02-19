@@ -1,22 +1,15 @@
 <!DOCTYPE HTML>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-	<meta charset="UTF-8"/>
-	<title>Learn numbers in Ukrainian</title>
-	<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
-	<link href="https://fonts.googleapis.com" rel="preconnect">
-	<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head"></head>
+<div th:replace="fragments/banner :: div"></div>
 <body>
-<p id="title">Quizzy</p>
 <div>
 	<p id="guess" th:utext="${guess.ukrainian}">...</p>
 </div>
 <form action="#" th:action="@{/months}" method="post" th:object="${answer}" th:each="month: ${months}">
-	<input type="submit" th:value="${month.english}"/>
-	<input id="answer" type="hidden" th:name="answer" th:value="${month.ukrainian}"/>
-	<input id="solution" type="hidden" th:name="solution" th:value="${guess.ukrainian}"/>
+	<input type="submit" th:value="${month.english}">
+	<input id="answer" type="hidden" th:name="answer" th:value="${month.ukrainian}">
+	<input id="solution" type="hidden" th:name="solution" th:value="${guess.ukrainian}">
 </form>
 </body>
 </html>

@@ -21,12 +21,22 @@ public class ApplicationApi {
         return "index";
     }
 
-    @GetMapping("/listen")
-    public String listenForm(Model model) {
-        return "listen";
+    @GetMapping("/days-listen")
+    public String daysListen(Model model) {
+        return "building";
     }
 
-    @GetMapping("/read")
+    @GetMapping("/numbers-listen")
+    public String numbersListen(Model model) {
+        return "building";
+    }
+
+    @GetMapping("/months-listen")
+    public String monthsListen(Model model) {
+        return "building";
+    }
+
+    @GetMapping("/numbers")
     public String readForm(Model model) {
         model.addAttribute("number", csvReader.getRandomNumber());
         return "read";
