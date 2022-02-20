@@ -14,7 +14,7 @@ public class CsvReaderTest {
     @Test
     public void testGetResource() throws IOException, URISyntaxException {
         CsvReader csvReader = new CsvReader();
-        assertThat(csvReader.getNumbers()).isNotEmpty();
+        assertThat(csvReader.getNumberList()).isNotEmpty();
     }
 
 }

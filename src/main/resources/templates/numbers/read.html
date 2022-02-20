@@ -6,7 +6,7 @@
 <div>
 	<p id="guess" th:utext="${number.ukrainian}">...</p>
 </div>
-<form action="#" th:action="@{/read}" method="post" th:object="${answer}">
+<form action="#" th:action="@{/numbers}" method="post" th:object="${answer}">
 	<label for="answer"></label><input id="answer" placeholder="Your answer..." type="number" th:name="answer">
 	<input id="number" type="hidden" th:name="number" th:value="${number.number}">
 	<input type="submit" value="Ok">

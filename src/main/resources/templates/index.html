@@ -5,17 +5,16 @@
 <body>
 <div class="intro">
 	<p id="hello">Hello from Ukraine 👋🏻</p>
-	<p id="hello2">Quizzy it’s website with small quests for learning Ukrainian) Make learning awesome!</p>
+	<p id="hello2">Quizzy is a website with small games for learning Ukrainian. Make learning awesome!</p>
 </div>
 <div id="menu">
 	<div class="game">
 		<img class="gameLogo" src="../static/images/days.svg" th:src="@{images/days.svg}" alt="days">
 		<div class="gameBlock">
 			<div class="quizzTitle">Days</div>
-			<div class="quizzSubTitle">Are you still confused about how to be on Ukrainian Sunday, whether it is a
-				Середа))
-				This
-				quest is perfect choice for you))
+			<div class="quizzSubTitle">
+				Are you still confused about what is Ukrainian Sunday, whether it is a Середа or Субота?
+				This game is perfect choice for you!
 			</div>
 			<div class="buttonsBlock">
 				<form class="gameForm" action="#" th:action="@{/days-listen}" method="get">
@@ -39,10 +38,9 @@
 		<img class="gameLogo" src="../static/images/numbers.svg" th:src="@{images/numbers.svg}" alt="numbers">
 		<div class="gameBlock">
 			<div class="quizzTitle">Numbers</div>
-			<div class="quizzSubTitle">If you're scared of paying at the stores and have chaos in your head from all
-				those
-				сто,
-				п’ятдесять. Pick this quiz))
+			<div class="quizzSubTitle">
+				If you're scared of paying at the stores and have chaos in your head from all those сто, п’ятдесять.
+				Pick this quiz ;)
 			</div>
 			<div class="buttonsBlock">
 				<form class="gameForm" action="#" th:action="@{/numbers-listen}" method="get">
@@ -66,8 +64,9 @@
 		<img class="gameLogo" src="../static/images/months.svg" th:src="@{images/months.svg}" alt="months">
 		<div class="gameBlock">
 			<div class="quizzTitle">Months</div>
-			<div class="quizzSubTitle">If you're in doubt, what's the best month for a vacation? Червень, серпень чи
-				травень? Choose this quest))
+			<div class="quizzSubTitle">If you're in doubt, what's the best month for a vacation?
+				Червень, серпень чи травень?
+				Choose this game!
 			</div>
 			<div class="buttonsBlock">
 				<form class="gameForm" action="#" th:action="@{/months-listen}" method="get">
@@ -82,6 +81,23 @@
 						Read
 						<img role="img" class="icon" src="../static/images/icon/read.svg"
 							 th:src="@{images/icon/read.svg}" alt="readMonths">
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="game">
+		<img class="gameLogo" src="../static/images/months.svg" th:src="@{images/months.svg}" alt="food">
+		<div class="gameBlock">
+			<div class="quizzTitle">Food</div>
+			<div class="quizzSubTitle">Work in progress 🚧
+			</div>
+			<div class="buttonsBlock">
+				<form class="gameForm" action="#" th:action="@{/food}" method="get">
+					<button class="readButton" type="submit" value="Read" style="float: left;">
+						Read
+						<img role="img" class="icon" src="../static/images/icon/read.svg"
+							 th:src="@{images/icon/read.svg}" alt="readFood">
 					</button>
 				</form>
 			</div>

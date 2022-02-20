@@ -4,7 +4,12 @@
 <div th:replace="fragments/banner :: div"></div>
 <body>
 <div>
-	<p id="guess" th:utext="${guess.ukrainian}">...</p>
+	<figure>
+		<audio controls th:src="@{${'audio/days/' + guess.english + '.mp3'}}">
+			Your browser does not support the
+			<code>audio</code> element.
+		</audio>
+	</figure>
 </div>
 <form action="#" th:action="@{/days}" method="post" th:object="${answer}" th:each="day: ${days}">
 	<input type="submit" th:value="${day.english}">

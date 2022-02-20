@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head"></head>
+<div th:replace="fragments/banner :: div"></div>
+<body>
+<div>
+	<figure>
+		<audio controls th:src="@{${'audio/months/' + guess.english + '.mp3'}}">
+			Your browser does not support the
+			<code>audio</code> element.
+		</audio>
+	</figure>
+</div>
+<form action="#" th:action="@{/months}" method="post" th:object="${answer}" th:each="month: ${months}">
+	<input type="submit" th:value="${month.english}">
+	<input id="answer" type="hidden" th:name="answer" th:value="${month.ukrainian}">
+	<input id="solution" type="hidden" th:name="solution" th:value="${guess.ukrainian}">
+</form>
+</body>
+</html>
