@@ -8,6 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 import java.util.Set;
 
@@ -46,7 +47,7 @@ public class CsvReader {
         InputStream monthStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("static/months.csv");
         CsvReader.readFile(monthStream).forEach(line -> {
             String[] strings = line.split(",");
-            Month month = new Month(strings[0], strings[1]);
+            Month month = new Month(strings[0], strings[1], "audio/months/" + strings[0].toLowerCase(Locale.ROOT) + ".mp3");
             monthList.add(month);
         });
         if (monthStream != null) {
@@ -58,7 +59,7 @@ public class CsvReader {
         InputStream dayStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("static/days.csv");
         CsvReader.readFile(dayStream).forEach(line -> {
             String[] strings = line.split(",");
-            Day day = new Day(strings[0], strings[1]);
+            Day day = new Day(strings[0], strings[1], "audio/days/" + strings[0].toLowerCase(Locale.ROOT) + ".mp3");
             dayList.add(day);
         });
         if (dayStream != null) {

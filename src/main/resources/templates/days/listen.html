@@ -5,7 +5,7 @@
 <body>
 <div>
 	<figure>
-		<audio controls th:src="@{${'audio/days/' + guess.english + '.mp3'}}">
+		<audio controls th:src="${guess.audioPath}">
 			Your browser does not support the
 			<code>audio</code> element.
 		</audio>

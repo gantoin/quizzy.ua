@@ -11,5 +11,6 @@ public class Month {
 
     private String english;
     private String ukrainian;
+    private String audioPath;
 
 }
