@@ -141,6 +141,8 @@ body {
 }
 
 .readButton {
+    outline: none;
+    border: none;
     float: right;
     clear: both;
     display: flex;
