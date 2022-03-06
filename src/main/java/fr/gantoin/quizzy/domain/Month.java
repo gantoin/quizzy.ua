@@ -1,16 +1,13 @@
 package fr.gantoin.quizzy.domain;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@AllArgsConstructor
 @Getter
 @Setter
-public class Month {
+public class Month extends Word {
 
-    private String english;
-    private String ukrainian;
-    private String audioPath;
-
+    public Month(String english, String ukrainian, String audioPath) {
+        super(english, ukrainian, audioPath);
+    }
 }

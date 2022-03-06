@@ -6,9 +6,9 @@
 <div>
 	<p id="guess" th:utext="${guess.ukrainian}">...</p>
 </div>
-<form action="#" th:action="@{/days}" method="post" th:object="${answer}" th:each="day: ${days}">
-	<input type="submit" th:value="${day.english}">
-	<input id="answer" type="hidden" th:name="answer" th:value="${day.ukrainian}">
+<form action="#" th:action="@{/answer}" method="post" th:object="${answer}" th:each="e: ${list}">
+	<input type="submit" th:value="${e.english}">
+	<input id="answer" type="hidden" th:name="answer" th:value="${e.ukrainian}">
 	<input id="solution" type="hidden" th:name="solution" th:value="${guess.ukrainian}">
 </form>
 </body>

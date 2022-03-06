@@ -1,15 +1,13 @@
 package fr.gantoin.quizzy.domain;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@AllArgsConstructor
 @Getter
 @Setter
-public class Food {
+public class Food extends Word {
 
-    private String english;
-    private String ukrainian;
-
+    public Food(String english, String ukrainian) {
+        super(english, ukrainian, null);
+    }
 }

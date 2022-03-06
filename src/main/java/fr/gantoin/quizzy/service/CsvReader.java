@@ -125,12 +125,13 @@ public class CsvReader {
         return foodList.get(random.nextInt(foodList.size()));
     }
 
-    public Set<Food> getFiveRandomFood() {
+    public Set<Food> getFiveRandomFoodAndAnswer(Food answer) {
         Set<Food> food = new HashSet<>();
         while (food.size() < 5) {
             Random random = new Random();
             food.add(foodList.get(random.nextInt(foodList.size())));
         }
+        food.add(answer);
         return food;
     }
 }
