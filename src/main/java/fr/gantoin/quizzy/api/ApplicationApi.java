@@ -1,19 +1,17 @@
 package fr.gantoin.quizzy.api;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import fr.gantoin.quizzy.domain.Food;
+import fr.gantoin.quizzy.domain.Word;
+import fr.gantoin.quizzy.service.CsvReader;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import lombok.RequiredArgsConstructor;
-
-import fr.gantoin.quizzy.domain.Food;
-import fr.gantoin.quizzy.domain.Word;
-import fr.gantoin.quizzy.service.CsvReader;
+import java.util.ArrayList;
+import java.util.List;
 
 @RequiredArgsConstructor
 @Controller
